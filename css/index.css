@@ -8,9 +8,13 @@
   --clr-text: #333;
   --clr-dark: #140200;
   --clr-light: #fff;
+  --clr-light-darker: rgb(233, 233, 233);
   --clr-primary: #4b2533;
   --clr-accent: #270601;
   --btn-primary: #db0000;
+  --btn-primary-darker: #990000;
+  --btn-secondary: #fff;
+  --btn-secondary-darker: rgb(207, 207, 207);
   --fw-normal: 400;
   --fw-bold: 700;
   --fw-black: 900;
@@ -97,23 +101,16 @@ nav {
 }
 
 /* Buttons */
-.btn-group {
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-}
-
 .btn {
-  padding: 1.5em 2em;
+  display: inline-block;
+  padding: 0.5em 1em;
   border: none;
   border-radius: 0.5em;
+  font-size: 1rem;
   font-weight: var(--fw-bold);
+  text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-}
-
-.btn:hover {
-  transform: scale(1.05);
 }
 
 .btn-solid {
@@ -121,10 +118,18 @@ nav {
   color: var(--clr-light);
 }
 
+.btn-solid:hover {
+  background-color: var(--btn-primary-darker);
+}
+
 .btn-outlined {
-  background-color: var(--clr-light);
+  background-color: var(--btn-secondary);
   color: var(--btn-primary);
   border: 3px solid var(--btn-primary);
+}
+
+.btn-outlined:hover {
+  background-color: var(--btn-secondary-darker);
 }
 
 /* Layout */
