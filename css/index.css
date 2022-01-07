@@ -157,7 +157,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 90vh;
     position: relative;
     color: var(--clr-light);
   }
@@ -221,6 +221,21 @@ nav {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.scroll-to-top {
+  position: fixed;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1em;
+  color: inherit;
+  background: var(--btn-primary-darker);
+  padding: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+
+  /* bottom: 0;
+  right: 0; */
+  inset: auto 1rem 1rem auto;
 }
 
 /* Footer */
