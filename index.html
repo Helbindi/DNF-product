@@ -1,114 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DNF Duel</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <nav id="navigation">
-        <ul class="nav-list">
-            <a class="nav-link" href="#">
-                <img class="dnf-icon" src="images/dnf-icon.jpg" alt="dnf icon">
-            </a>
-            <a class="nav-link" href="#"><li>Home</li></a>
-            <a class="nav-link" href="#characters"><li>Characters</li></a>
-            <a class="nav-link" href="#about"><li>About</li></a>
-        </ul>
+      <ul class="nav-list">
+        <a class="nav-link" href="#">
+          <img class="dnf-icon" src="images/dnf-icon.jpg" alt="dnf icon" />
+        </a>
+        <a class="nav-link" href="#"><li>Home</li></a>
+        <a class="nav-link" href="#characters"><li>Characters</li></a>
+        <a class="nav-link" href="#about"><li>About</li></a>
+      </ul>
     </nav>
 
     <section id="hero" class="hero-section">
-        <img class="hero-image" src="images/dnf-striker.jpg" alt="hero image">
-        <article class="hero-product">
-            <h2 class="hero-title text-gradient">DNF Duel</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis massa massa, at dapibus odio bibendum et. Cras
-            vel placerat mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec velit feugiat, ac cursus libero
-            interdum. Fusce eget convallis sapien. Ut tincidunt felis ipsum, in iaculis tortor rhoncus ac.</p>
-            
-            <a href="#about"><button class="btn btn-solid">Learn More</button></a>
-            <button id="btn-modal" class="btn btn-outlined">Trailer</button>
-        </article>
-        
+      <img class="hero-image" src="images/dnf-striker.jpg" alt="hero image" />
+      <article class="hero-product">
+        <h2 class="hero-title text-gradient">DNF Duel</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          sagittis massa massa, at dapibus odio bibendum et. Cras vel placerat
+          mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec
+          velit feugiat, ac cursus libero interdum. Fusce eget convallis sapien.
+          Ut tincidunt felis ipsum, in iaculis tortor rhoncus ac.
+        </p>
+
+        <a href="#about"><button class="btn btn-solid">Learn More</button></a>
+        <button id="btn-modal" class="btn btn-outlined">Trailer</button>
+      </article>
     </section>
-    
+
     <!-- Trailer Modal -->
-    <div id="trailer-modal" class="modal">
-        <section class="trailer">
-            <span class="close">&times;</span>
-            <div class="container">
-                <div id="player" class="responsive-iframe"></div>
-            </div>
-        </section>
-    </div>
-    
-    <section id="characters" class="characters-section">
-        <h1 class="text-gradient">Characters</h2>
-        <div class="character-grid">
-            <a href="character/berserker.html"><img src="images/characters/berserker.jpg" alt="berserker"></a>
-            <a href="character/inquisitor.html"><img src="images/characters/inquisitor.jpg" alt="inquisitor"></a>
-            <a href="character/grappler.html"><img src="images/characters/grappler.jpg" alt="grappler"></a>
-            <a href="character/striker.html"><img src="images/characters/striker.jpg" alt="striker"></a>
-            <a href="character/ranger.html"><img src="images/characters/ranger.jpg" alt="ranger"></a>
-            <a href="character/hitman.html"><img src="images/characters/hitman.jpg" alt="hitman"></a>
-            <a href="character/dragon-knight.html"><img src="images/characters/dragonknight.jpg" alt="dragonknight"></a>
-            <a href="character/vanguard.html"><img src="images/characters/vanguard.jpg" alt="vanguard"></a>
-            <a href="character/kunoichi.html"><img src="images/characters/kunoichi.jpg" alt="kunoichi"></a>
-            <a href="character/crusader.html"><img src="images/characters/crusader.jpg" alt="crusader"></a>
+    <section id="trailer-modal" class="modal">
+      <div class="trailer">
+        <span class="close">&times;</span>
+        <div class="container">
+          <div id="player" class="responsive-iframe"></div>
         </div>
+      </div>
+    </section>
+
+    <section id="characters" class="characters-section">
+      <h1 class="text-gradient">Characters</h1>
+      <div class="character-grid">
+        <a href="character/berserker.html"
+          ><img src="images/characters/berserker.jpg" alt="berserker"
+        /></a>
+        <a href="character/inquisitor.html"
+          ><img src="images/characters/inquisitor.jpg" alt="inquisitor"
+        /></a>
+        <a href="character/grappler.html"
+          ><img src="images/characters/grappler.jpg" alt="grappler"
+        /></a>
+        <a href="character/striker.html"
+          ><img src="images/characters/striker.jpg" alt="striker"
+        /></a>
+        <a href="character/ranger.html"
+          ><img src="images/characters/ranger.jpg" alt="ranger"
+        /></a>
+        <a href="character/hitman.html"
+          ><img src="images/characters/hitman.jpg" alt="hitman"
+        /></a>
+        <a href="character/dragon-knight.html"
+          ><img src="images/characters/dragonknight.jpg" alt="dragonknight"
+        /></a>
+        <a href="character/vanguard.html"
+          ><img src="images/characters/vanguard.jpg" alt="vanguard"
+        /></a>
+        <a href="character/kunoichi.html"
+          ><img src="images/characters/kunoichi.jpg" alt="kunoichi"
+        /></a>
+        <a href="character/crusader.html"
+          ><img src="images/characters/crusader.jpg" alt="crusader"
+        /></a>
+      </div>
     </section>
 
     <section id="about" class="about-section">
-        <h1 class="text-gradient">About</h2>
-        <div class="about-grid">
-            <article class="about-content">
-                <h3 class="text-red">HP</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis massa massa, at dapibus odio bibendum et. Cras
-                vel placerat mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec velit feugiat, ac cursus libero
-                interdum.</p>
-                <img src="images/about/dnf-hp.jpg" alt="hp">
-            </article>
+      <h1 class="text-gradient">About</h1>
+      <div class="about-grid">
+        <article class="about-content">
+          <h3 class="text-red">HP</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            sagittis massa massa, at dapibus odio bibendum et. Cras vel placerat
+            mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec
+            velit feugiat, ac cursus libero interdum.
+          </p>
+          <img src="images/about/dnf-hp.jpg" alt="hp" />
+        </article>
 
-            <article class="about-content">
-                <h3 class="text-red">MP</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis massa massa, at dapibus odio bibendum et. Cras
-                vel placerat mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec velit feugiat, ac cursus libero
-                interdum.</p>
-                <img src="images/about/dnf-mp.jpg" alt="mp">
-            </article>
+        <article class="about-content">
+          <h3 class="text-red">MP</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            sagittis massa massa, at dapibus odio bibendum et. Cras vel placerat
+            mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec
+            velit feugiat, ac cursus libero interdum.
+          </p>
+          <img src="images/about/dnf-mp.jpg" alt="mp" />
+        </article>
 
-            <article class="about-content">
-                <h3 class="text-red">Conversion</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis massa massa, at dapibus odio bibendum et. Cras
-                vel placerat mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec velit feugiat, ac cursus libero
-                interdum.</p>
-                <img src="images/about/dnf-conversion.jpg" alt="conversions">
-            </article>
+        <article class="about-content">
+          <h3 class="text-red">Conversion</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            sagittis massa massa, at dapibus odio bibendum et. Cras vel placerat
+            mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec
+            velit feugiat, ac cursus libero interdum.
+          </p>
+          <img src="images/about/dnf-conversion.jpg" alt="conversions" />
+        </article>
 
-            <article class="about-content">
-                <h3 class="text-red">Basic Actions</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis massa massa, at dapibus odio bibendum et. Cras
-                vel placerat mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec velit feugiat, ac cursus libero
-                interdum.</p>
-                <img src="images/about/dnf-basic.jpg" alt="basic actions">
-            </article>
-        </div>
+        <article class="about-content">
+          <h3 class="text-red">Basic Actions</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            sagittis massa massa, at dapibus odio bibendum et. Cras vel placerat
+            mauris. Nulla rutrum at quam vitae aliquam. Etiam feugiat erat nec
+            velit feugiat, ac cursus libero interdum.
+          </p>
+          <img src="images/about/dnf-basic.jpg" alt="basic actions" />
+        </article>
+      </div>
     </section>
 
     <a href="#" class="scroll-to-top">Back to Top</a>
 
-    <script src="js/modal.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 
-<footer>
+  <footer>
     <h3>Social Media</h3>
-</footer>
-
+  </footer>
 </html>
