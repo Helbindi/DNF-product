@@ -33,20 +33,15 @@ function stopVideo() {
 
 // Scroll To Top
 const scrollToTop = document.querySelector('.scroll-to-top');
-const sections = document.querySelectorAll('section');
+const heroSection = document.querySelector('.hero-section');
 const options = {
     root: null,
-    threshold: 0.2,
-    rootMargin: "-150px"
+    threshold: 0.3,
 };
 
 const observer = new IntersectionObserver(function(entries,observer) {
   entries.forEach(entry => {
-    if(!entry.isIntersecting) {
-        return;
-    }
-
-    if(entry.target.className == 'hero-section' || entry.target.className == 'modal'){
+    if(entry.isIntersecting) {
         scrollToTop.style.display = 'none';
     } else {
         scrollToTop.style.display = 'block';
@@ -54,6 +49,4 @@ const observer = new IntersectionObserver(function(entries,observer) {
   });
 }, options);
 
-sections.forEach(section => {
-    observer.observe(section);
-})
+observer.observe(heroSection);
