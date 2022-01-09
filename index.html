@@ -34,10 +34,21 @@
             interdum. Fusce eget convallis sapien. Ut tincidunt felis ipsum, in iaculis tortor rhoncus ac.</p>
             
             <a href="#about"><button class="btn btn-solid">Learn More</button></a>
-            <button class="btn btn-outlined">Trailer</button>
+            <button id="btn-modal" class="btn btn-outlined">Trailer</button>
         </article>
+        
     </section>
-
+    
+    <!-- Trailer Modal -->
+    <div id="trailer-modal" class="modal">
+        <section class="trailer">
+            <span class="close">&times;</span>
+            <div class="container">
+                <div id="player" class="responsive-iframe"></div>
+            </div>
+        </section>
+    </div>
+    
     <section id="characters" class="characters-section">
         <h1 class="text-gradient">Characters</h2>
         <div class="character-grid">
@@ -92,6 +103,8 @@
     </section>
 
     <a href="#" class="scroll-to-top">Back to Top</a>
+
+    <script src="js/modal.js"></script>
 </body>
 
 <footer>
