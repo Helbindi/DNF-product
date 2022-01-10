@@ -52,7 +52,6 @@ h1 {
 nav {
   background-color: var(--clr-dark);
   padding: 1em;
-  max-height: 75px;
 }
 
 .dnf-icon {
@@ -61,8 +60,10 @@ nav {
 
 .nav-list {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 1em;
   margin: 0;
   padding: 0;
   font-weight: var(--fw-bold);
@@ -86,7 +87,7 @@ nav {
 }
 
 .btn {
-  margin: 1em 0 0.5em 1em;
+  margin: 1em;
   padding: 1em 1.5em;
   border: none;
   border-radius: 0.5em;
@@ -108,12 +109,6 @@ a {
   background-color: var(--clr-text);
 }
 
-@media (min-width: 500px) {
-  .btn {
-    padding: 1.5em 2em;
-    margin-left: 3em;
-  }
-}
 .trailer {
   max-width: 1300px;
   margin: 0 auto;
@@ -145,5 +140,57 @@ a {
 
 /* Footer */
 footer {
-  padding: 1em 0;
+  background-color: var(--clr-primary);
+  padding: 2em 0;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.dnf-icon-footer {
+  width: 150px;
+}
+
+.footer-list,
+.footer-socials {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--fw-bold);
+  list-style-type: none;
+  margin: 1em 0;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: var(--btn-secondary);
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.social-link {
+  width: 50px;
+}
+
+@media (min-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4em 0;
+  }
+
+  .footer-list {
+    flex-direction: row;
+    align-items: center;
+  }
 }
