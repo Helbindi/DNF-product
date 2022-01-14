@@ -78,6 +78,7 @@ nav {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--btn-primary);
+  text-decoration: underline;
 }
 
 /* Layout */
@@ -168,6 +169,12 @@ footer {
 .footer-link{
   text-decoration: none;
   color: var(--btn-secondary);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--btn-primary);
+  text-decoration: underline;
 }
 
 .footer-socials {
