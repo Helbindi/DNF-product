@@ -192,6 +192,15 @@ nav {
   max-width: 1400px;
 }
 
+.character-grid img {
+  opacity: 0.7;
+}
+
+.character-grid img:hover,
+.character-grid img:focus {
+  opacity: 1;
+}
+
 @media (min-width: 500px) {
   .character-grid {
     grid-template-columns: repeat(2, 1fr);

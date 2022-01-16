@@ -149,6 +149,7 @@ footer {
 
 .dnf-icon-footer {
   width: 150px;
+  border-radius: 1em;
 }
 
 .footer-list,
