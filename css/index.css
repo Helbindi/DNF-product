@@ -65,7 +65,9 @@ h2 {
   font-weight: var(--fw-bold);
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -348,7 +350,7 @@ footer {
   gap: 1em;
 }
 
-.footer-link{
+.footer-link {
   text-decoration: none;
   color: var(--btn-secondary);
 }
