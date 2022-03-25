@@ -81,6 +81,16 @@ nav {
   text-decoration: underline;
 }
 
+@media (max-width: 450px) {
+  .dnf-icon {
+    width: 50px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
 /* Layout */
 .btn-back {
   display: flex;
