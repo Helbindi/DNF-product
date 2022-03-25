@@ -144,6 +144,16 @@ nav {
   background-color: var(--btn-secondary-darker);
 }
 
+@media (max-width: 450px) {
+  .dnf-icon {
+    width: 50px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
 /* Layout */
 .hero-section {
   background-color: var(--clr-accent);
